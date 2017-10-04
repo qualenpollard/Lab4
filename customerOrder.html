@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Exercise 3: Customer Order</title>
+        <script src="formChecker.js"></script>
+        <link href=”style.css rel=”stylesheet” type=”text/css”/>
+    </head>
+
+    <body>
+        <div>
+            <form class="fun" name="orderForm" action="customerBackend.php" onsubmit="return orderValidation()" method="post">
+                How many Movado watches would you like? ($30):<br>
+                <input type="text" class="fun" name="item1"><br><br>
+
+                How many Oranges would you like? ($2):<br>
+                <input type="text" name="item2"><br><br>
+
+                How many iPhone 7s? ($800):<br>
+                <input type="text" name="item3"><br><br>
+
+                Choose your shipping option:<br>
+                <input type="radio" name="shipping" value="0">(Free) 7-day<br>
+                <input type="radio" name="shipping" value="50">($50.00) Over night<br>
+                <input type="radio" name="shipping" value="5">($5.00) Three day<br><br>
+                <input type="submit" name="submit" value="Make Order">
+                <input type="reset" value="Start Over">
+            </form>
+        </div>
+    </body>
+</html>
